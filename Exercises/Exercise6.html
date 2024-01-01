@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" language="javascript">
+        function hellodate(){
+           let input=new Date(document.getElementById("date1").value)
+           let today=new Date()
+           console.log(today)
+           console.log(input)
+           
+           if(today.toDateString()==input.toDateString()){
+            alert(" today")
+           }
+           else if(today<input){
+            alert("After today")
+           }
+           else{
+            alert("Before Today")
+           }
+           
+        }
+    </script>
+</head>
+<body>
+    <h1>DATE</h1>
+    <form>
+        <label>Enter date</label>
+        <input type="date" value="2023-12-29" id="date1" >
+        <button type="button" onclick="hellodate()">click here</button>
+</form>
+</body>
+</html>
