@@ -17,6 +17,7 @@ b.Parent = Object.assign({}, a.Parent);
 
 b.Parent.Student = Object.assign({}, a.Parent.Student);
 b.Parent.Student.marks = a.Parent.Student.marks.map((mark)=>Object.assign({},mark))
+b.Parent.MobileNos=[...a.Parent.MobileNos]
 b.Parent.Student.Name = "Athira Prasad";
 b.Parent.Student.Age = 23;
 b.Parent.Student.Rollno = 16;
